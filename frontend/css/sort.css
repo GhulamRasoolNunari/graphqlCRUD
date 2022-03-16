@@ -1,0 +1,35 @@
+.sort {
+  position: relative;
+}
+
+.sort-items {
+  position: relative;
+}
+.item-up {
+  position: absolute;
+  left: 4px;
+  top: -3px;
+}
+.item-down {
+  position: absolute;
+  left: 4px;
+  top: 8px;
+}
+.sort * {
+  height: 19px;
+}
+
+.sort-item {
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.3s all;
+}
+.sort-item:hover {
+  opacity: 1;
+  transition: 0.3s all;
+}
+
+.active {
+  opacity: 1;
+  transition: 0.3s all;
+}

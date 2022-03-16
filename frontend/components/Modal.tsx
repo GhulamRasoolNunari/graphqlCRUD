@@ -19,7 +19,7 @@ export const Modal = (data: IModalProps) => {
           <div className="btn close-modal" onClick={data.onClose}>
             <CloseIcon></CloseIcon>
           </div>
-          <div className="title">Modal</div>
+          <div className="title">{data.title ?? "Modal"}</div>
           {data.element ?? data.children}
         </div>
       </div>

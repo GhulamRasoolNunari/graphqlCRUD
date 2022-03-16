@@ -3,10 +3,7 @@ import { resolver } from "./apollo/resolver.js";
 import { TypeDef } from "./apollo/schema.js";
 import { server } from "./router.js";
 import { ApolloServer } from "apollo-server-fastify";
-import {
-  ApolloServerPluginDrainHttpServer,
-  ApolloServerPluginInlineTrace,
-} from "apollo-server-core";
+import { ApolloServerPluginDrainHttpServer } from "apollo-server-core";
 import { ApolloServerPlugin } from "apollo-server-plugin-base";
 import { FastifyInstance } from "fastify";
 

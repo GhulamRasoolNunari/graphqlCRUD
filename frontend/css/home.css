@@ -45,3 +45,7 @@ label{
     padding: 0.2rem;
     width: 50px;
 }
+
+.header-item{
+    display: flex;
+}

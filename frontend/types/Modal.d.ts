@@ -1,20 +1,14 @@
-import { ReactElement, ReactNode } from "react";
+import { IChild } from './Default.d';
 
-export type IModalProps = IModalType1 | IModalType2;
 
-interface IModalDefault {
+interface IModalData  {
   title?: string;
   closeOnBGClick?:boolean
   onClose?: () => void;
   state?: boolean;
 }
 
-interface IModalType2 extends IModalDefault {
-  element: ReactElement;
-  children?: ReactElement;
-}
 
-interface IModalType1 extends IModalDefault {
-  children: ReactNode;
-  element?: ReactElement;
-}
+type IModalProps = IModalData & IChild
+
+
